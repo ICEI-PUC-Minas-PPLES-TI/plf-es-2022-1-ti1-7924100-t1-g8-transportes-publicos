@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de informação</title>
+    <link rel="stylesheet" href="./rotas.css" />
+  </head>
+  <header class="menu-bg">
+    <div class="menu">
+      <div class="menu-logo">
+        <a href="../Tela Inicial/index.html">EasyPass</a>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="../Mapa/mapa.html">Localização </a></li>
+          <li>
+            <a href="../Formulario informacoes/formulario.html"
+              >Suas Informações</a
+            >
+          </li>
+          <li><a href="../FeedBack/feedback.html">FeedBack</a></li>
+          <li><a href="../Login/login.html">Login</a></li>
+          <li><a href="../rotas/rotas.html">Rotas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <div class="box">
+      <label for="cep">CEP: </label>
+      <input type="text" id="cep" placeholder="Digite o seu CEP" />
+      <button onclick="endereço()">Obter endereço</button><br />
+
+      <label for="logradouro">Logradouro: </label>
+      <input type="text" id="logradouro" disabled /><br />
+
+      <label for="bairro">Bairro: </label>
+      <input type="text" id="bairro" disabled /><br />
+
+      <label for="localidade">Localidade: </label>
+      <input type="text" id="localidade" disabled /><br />
+
+      <label for="uf">UF: </label>
+      <input type="text" id="uf" disabled /><br />
+
+      <p>
+        <label for="transporte">Selecione o tipo de transporte: </label>
+        <select
+          name="transporte"
+          id="transporte"
+          onchange="tiposDeTransportes(value)"
+        >
+          <option disabled selected>Nenhum</option>
+          <option>Ônibus</option>
+          <option>Metrô</option>
+          <option>Táxi</option>
+        </select>
+      </p>
+
+      <div id="linhasMostrar"></div>
+    </div>
+    <script src="./rotas.js"></script>
+  </body>
+</html>
