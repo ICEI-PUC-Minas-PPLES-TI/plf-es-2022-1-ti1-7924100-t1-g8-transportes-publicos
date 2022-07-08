@@ -1,0 +1,173 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  color: #3a3939;
+  background-color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu-bg {
+  background: #07328d;
+}
+
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu-logo a {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
+}
+
+.menu-nav a:hover {
+  color: #3b9ae7;
+  transition: 275ms;
+}
+
+.introducao {
+  font-size: 3em;
+  line-height: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+.sobre {
+  border-top: 2px solid #093eb3;
+  border-bottom: 2px solid #093eb3;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre-info {
+  flex: 2 1 300px;
+  margin: 0 10px;
+}
+
+.sobre-info h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.sobre-info p {
+  font-size: 1.25em;
+  color: #3a3a3a;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+}
+
+.sobre-img {
+  flex: 1 1 160px;
+  margin: 0 10px;
+}
+
+.qualidade {
+  max-width: 960px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qualidade-item {
+  flex: 1 1 300px;
+  margin: 20px 10px;
+  max-width: 25rem;
+  max-height: 30rem;
+  overflow: auto;
+}
+
+.qualidade-item h2 {
+  font-size: 2.25em;
+  color: #3a3a3a;
+  margin-bottom: 20px;
+}
+
+.qualidade-item h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.qualidade-item:nth-of-type(3n + 1) h2::before {
+  background-color: #093eb3;
+}
+
+.qualidade-item:nth-of-type(3n + 2) h2::before {
+  background-color: #093eb3;
+}
+
+.qualidade-item:nth-of-type(3n + 3) h2::before {
+  background-color: #093eb3;
+}
+
+.qualidade-item p {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  color: #3a3a3a;
+}
+
+.footer {
+  display: flex;
+  background-color: #07328d;
+  height: 100px;
+  align-items: center;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+}

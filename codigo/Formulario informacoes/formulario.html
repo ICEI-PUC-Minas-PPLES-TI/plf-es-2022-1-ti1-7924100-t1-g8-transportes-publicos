@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="formulario.css"
+      media="screen"
+    />
+    <title>Formulário</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="menu-bg">
+      <div class="menu">
+        <div class="menu-logo">
+          <a href="../Tela Inicial/index.html">EasyPass</a>
+        </div>
+        <nav class="menu-nav">
+          <ul>
+            <li><a href="../Mapa/mapa.html">Localização</a></li>
+            <li>
+              <a href="../Formulario informacoes/formulario.html"
+                >Suas Informações</a
+              >
+            </li>
+            <li><a href="../FeedBack/feedback.html">FeedBack</a></li>
+            <li><a href="../Login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="box">
+      <form action="">
+        <fieldset>
+          <legend><b>Cadastro de Informações EasyPass</b></legend>
+          <br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputUser"
+              required
+            />
+            <label for="nome" class="labelInput">Nome completo</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="inputUser"
+              required
+            />
+            <label for="email" class="labelInput">Endereço de E-mail</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              class="inputUser"
+              required
+            />
+            <label for="telefone" class="labelInput">Telefone de contato</label>
+          </div>
+          <p>Sexo:</p>
+          <input
+            type="radio"
+            id="masculino"
+            name="genero"
+            value="masculino"
+            required
+          />
+          <label for="masculino">Masculino</label>
+          <br />
+          <input
+            type="radio"
+            id="feminino"
+            name="genero"
+            value="feminino"
+            required
+          />
+          <label for="feminino">Feminino</label>
+          <br />
+          <input type="radio" id="outro" name="genero" value="outro" required />
+          <label for="outro">Outro</label>
+          <br /><br />
+          <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+          <input
+            type="date"
+            name="data_nascimento"
+            id="data_nascimento"
+            required
+          />
+          <br /><br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="cidade"
+              id="cidade"
+              class="inputUser"
+              required
+            />
+            <label for="cidade" class="labelInput">Cidade</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="estado"
+              id="estado"
+              class="inputUser"
+              required
+            />
+            <label for="estado" class="labelInput">Estado</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="endereco"
+              id="endereco"
+              class="inputUser"
+              required
+            />
+            <label for="endereco" class="labelInput">Endereço</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input type="text" name="CEP" id="CEP" class="inputUser" required />
+            <label for="CEP" class="labelInput">CEP</label>
+          </div>
+          <a href="../Tela Inicial/index.html">
+            <input type="submit" name="submit" id="submit" />
+          </a>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
